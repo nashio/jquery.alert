@@ -2,7 +2,7 @@ jquery.alert
 ============
 
 jQuery plugin to display one or multiple stacked alert messages at the bottom of the screen. (growl style)
-
+<pre>
   Options:
   
   delay: time in milliseconds to appear
@@ -19,3 +19,4 @@ jQuery plugin to display one or multiple stacked alert messages at the bottom of
     bg : "royalblue",
     txt : "yellow"
   });
+</pre>
