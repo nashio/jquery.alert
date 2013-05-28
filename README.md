@@ -5,10 +5,12 @@ jQuery plugin to display one or multiple stacked alert messages at the bottom of
 <pre>
   Options:
   
-  delay: time in milliseconds to appear
+  delay: time in milliseconds before it appears
   timeout: time in milliseconds before it closes
   stay: bolean to keep the alert forever
   message: message to insert in the alert, accepts objects
+  bg: background color (can use HEX)
+  txt: text color (can use HEX)
   
   Example:
   $.alert({ 
