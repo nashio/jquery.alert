@@ -5,22 +5,22 @@ jQuery plugin to display one or multiple stacked alert messages at the bottom of
 Can also parse objects
 
 
-  Options:
+  #Options:
 
   
-  '''delay:''' time in milliseconds before it appears
+  ```delay:``` time in milliseconds before it appears
   
-  '''timeout:''' time in milliseconds before it closes
+  ```timeout:``` time in milliseconds before it closes
   
-  '''stay:''' bolean to keep the alert forever
+  ```stay:``` bolean to keep the alert forever
   
-  '''message:''' message to insert in the alert, accepts objects
+  ```message:``` message to insert in the alert, accepts objects
   
-  '''bg:''' background color (can use HEX)
+  ```bg:``` background color (can use HEX)
   
-  '''txt:''' text color (can use HEX)
+  ```txt:``` text color (can use HEX)
   
-  '''Example:
+  '''Example:```
 
 <pre>
 
