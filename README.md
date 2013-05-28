@@ -5,7 +5,7 @@ jQuery plugin to display one or multiple stacked alert messages at the bottom of
 Can also parse objects
 
 
-  #Options:
+  # Options: #
 
   
   ```delay:``` time in milliseconds before it appears
@@ -20,7 +20,7 @@ Can also parse objects
   
   ```txt:``` text color (can use HEX)
   
-  '''Example:```
+  # Example: #
 
 <pre>
 
