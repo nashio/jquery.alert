@@ -1,0 +1,30 @@
+.alert {
+  position: relative;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.alerts  {
+  background: rgba(0,0,0,.7);
+  color: yellow;
+  position: absolute;
+  bottom: 0;
+  font-family: monospace, helvetica, arial, verdana;
+  font-size: 12px;
+  width: 300px;
+  border-radius: 5px 5px 0 0;
+}
+
+.alerts .close {
+ top: 4px;
+ position: absolute;
+ right: 8px;
+ padding: 0px;
+ text-decoration: none;
+ font-family: monospace, arial;
+ color: white;
+}
+
+.alerts p {
+  padding: 5px 20px 6px 15px;
+}
