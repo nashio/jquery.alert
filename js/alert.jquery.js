@@ -1,5 +1,5 @@
 /* 
-  jQuery.alert (c) 2013, Ignacio Chavez.
+  jQuery.alert (c) 2013, Ignacio Chavez. http://github.com/nashio
   
   Displays an alert message or multiple stacked messages at the bottom of the screen.
   
