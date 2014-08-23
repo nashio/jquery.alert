@@ -33,3 +33,7 @@ Can also parse objects
     txt : "yellow"
   });
 </pre>
+
+
+
+Copyright (c) 2013, Ignacio Chavez.
