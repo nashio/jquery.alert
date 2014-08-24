@@ -11,7 +11,7 @@
   message: message to insert in the alert, accepts objects
   
   Example:
-  alert({ 
+  $.alert({ 
     message: "Your message goes here, hello :D ", 
     stay : false,
     timeout: 3000,
@@ -42,10 +42,10 @@
 
     showPopup: function(args) {
            
-      var message = args.message;
-      var self = this;
-      var bg_color = args.bg || "#000";
-     
+      var self      = this;
+      var message   = args.message;
+      var bg_color  = args.bg || "#000";
+      var txt_color = args.txt || "#EEE";
       
       // Force unformated message to object
       if (typeof args == "string")
@@ -84,7 +84,11 @@
       var item = $(item_html); 
       
       // Apply color
-      item.css({"background-color" : bg_color, "display" : "none"});
+      item.css({
+        "background-color" : bg_color, 
+        "color" : txt_color,
+        "display" : "none"
+      });
       
       if (args.classname) { item.addClass(args.classname); }
 
@@ -146,9 +150,9 @@
     
     createHtml: function(options) {
       if (options.message && options.title) {
-        return "<div class='alert'><h3>"+options.title+"</h3><p>"+options.message+"</p><a href='#' class='close'></a></div>";
+        return "<div class='alert'><h3>" + options.title + "</h3><p>" + options.message + "</p><a href='#' class='close'></a></div>";
       } else {
-        return "<div class='alert'><p>"+options.message+"</p><a href='#' class='close'>x</a></div>";
+        return "<div class='alert'><p>" + options.message + "</p><a href='#' class='close'>x</a></div>";
       }
     },
 
@@ -164,9 +168,9 @@
       for( var i in str ){
         if(Object.prototype.toString.call( str[i] ) === "[object Object]" || 
            Object.prototype.toString.call( str[i] ) === "[object Array]"){
-          o += ind_str+i+":"+this.stringObject( str[i], spc + 1 )+"<br/>";
+          o += ind_str+i + ":" + this.stringObject( str[i], spc + 1 ) + "<br/>";
         } else {
-          o += ind_str+i+":"+str[i]+"<br/>";
+          o += ind_str + i + ":"+str[i] + "<br/>";
         }
       }    
       
@@ -188,7 +192,7 @@
     
   };
   
-  
+
   $.alert = new Popup();
   
   
