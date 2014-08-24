@@ -25,6 +25,8 @@
 
 ;(function($) {
   
+  // Constructor
+  
   var Popup = function() {
     var that = this;
       return function(message){
