@@ -25,14 +25,14 @@
 
 ;(function($) {
   
-  var popup = function() {
+  var Popup = function() {
     var that = this;
       return function(message){
         return that.showPopup(message);
     };
   };
 
-  popup.prototype = {
+  Popup.prototype = {
    
     // Options
 
@@ -189,7 +189,7 @@
   };
   
   // Instantiate the alert popup and add it to jQuery
-  $.alert = new popup();
+  $.alert = new Popup();
   
   
 })(jQuery);
