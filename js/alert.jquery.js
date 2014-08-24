@@ -119,7 +119,9 @@
 
       // Remove timeout
       var timer = $item.data('alert-timer');
-      if (timer) { window.clearTimeout(timer); }
+      if (timer) { 
+        window.clearTimeout(timer); 
+      }
 
       // Add timeout.
       if (args.stay !== true) {
@@ -143,7 +145,9 @@
 
     killAlert: function($alert) {
       $alert = $($alert);
-      $alert.slideUp(function() { $(this).remove(); });
+      $alert.slideUp(function() { 
+        $(this).remove(); 
+      });
     },
     
    // Construct the html. Override me if you like.
@@ -170,7 +174,7 @@
            Object.prototype.toString.call( str[i] ) === "[object Array]"){
           o += ind_str+i + ":" + this.stringObject( str[i], spc + 1 ) + "<br/>";
         } else {
-          o += ind_str + i + ":"+str[i] + "<br/>";
+          o += ind_str + i + ":" + str[i] + "<br/>";
         }
       }    
       
