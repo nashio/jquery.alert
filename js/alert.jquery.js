@@ -11,7 +11,7 @@
   message: message to insert in the alert, accepts objects
   
   Example:
-  $.alert({ 
+  alert({ 
     message: "Your message goes here, hello :D ", 
     stay : false,
     timeout: 3000,
@@ -188,10 +188,9 @@
     
   };
   
-  // Instantiate the alert popup and add it to jQuery
+  
   $.alert = new Popup();
   
   
 })(jQuery);
-
 
